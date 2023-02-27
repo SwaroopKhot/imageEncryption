@@ -1,0 +1,106 @@
+.login_main_div{
+    text-align: center;
+
+}
+
+.login_container{
+    text-align: center;
+    margin: 5% auto;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.login_container_title{
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0px;
+    color: crimson;
+}
+
+.login_container_desc{
+    color: rgb(22, 35, 61);
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+    margin: 5px 10px;
+}
+
+.login_container_form_content{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.login_container_form_row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 8px 10px;
+    padding: 0px 10px; */
+    /* justify-content: ; */
+}
+
+.login_container_form_row>label{
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+}
+
+.login_container_form_row>input{
+    width: 95%;
+    margin: 5px 0px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login_container_form_signin_msg{
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    margin: 10px 0px 10px 0px;
+}
+
+.login_container_form_button{
+    margin: 15px 10px;
+}
+
+.login_container_login_btn{
+    width: 50%;
+    padding: 5px 10px;
+    background-color: rgb(30, 154, 30);
+    border: 1px solid green;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login_container_account_btn{
+    width: 50%;
+    padding: 5px 10px;
+    background-color: white;
+    border: 0px;
+    font-size: 12px;
+    color: navy;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login_container_error_msg{
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+
+}

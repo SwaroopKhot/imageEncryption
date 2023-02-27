@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// DataLayers
+import {StateProvider} from './utils/provider/StateProvider';
+import reducer, { initialState } from './utils/provider/reducer';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <StateProvider initialState = {initialState} reducer={reducer}>
+      <App />
+    </StateProvider>
   </React.StrictMode>
 );
 
