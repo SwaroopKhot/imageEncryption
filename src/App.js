@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './component/header/NavBar';
 import Login from './component/auth/Login';
 import Home from './component/Home';
+import Profile from './component/Profile';
+import History from './History';
 
 function App() {
   return (
@@ -20,6 +22,13 @@ function App() {
 
           <Route path="/profile" element={<>
             <NavBar />
+            <Profile />
+          </>}>
+          </Route>
+
+          <Route path="/storage" element={<>
+            <NavBar />
+            <History />
           </>}>
           </Route>
 

@@ -1,0 +1,45 @@
+
+.profile_container{
+    margin: 10px;
+}
+
+.profile_welcome_section>p{
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+
+.profile_welcome_section>p>span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.profile_details_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.profile_details_div_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.profile_details_div_lb_name{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+    min-width: fit-content;
+}
+
+.profile_details_div_lb_op{
+    font-size: 13px;
+    letter-spacing: 1px;
+}

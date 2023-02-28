@@ -27,7 +27,8 @@ function NavBar() {
 
                 <div className="nav_bar_quick_links">
                     <Link to="/">Home</Link>
-                    <Link to={user ? "profile" : "login"}>{user ? "Welcome, " + user.name : "login"}</Link>
+                    <Link to="/storage">History</Link>
+                    <Link to={user ? "/profile" : "/login"}>{user ? "Welcome, " + user.name : "login"}</Link>
                 </div>
             </div>
 

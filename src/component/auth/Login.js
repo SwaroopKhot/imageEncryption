@@ -10,7 +10,9 @@ import {useNavigate} from 'react-router-dom'
 
 
 function Login(){
-
+    
+    const [{ user }, dispatch] = useStateValue();
+    
     const navigate = useNavigate()
     const [email, setEmail ] = useState('');
     const [name, setName ] = useState('');
@@ -20,7 +22,6 @@ function Login(){
     const [toggleLogin, setToggleLogin] = useState(false)
     
     
-    const [{ user }, dispatch] = useStateValue();
 
     const signin = () => {
         
@@ -58,6 +59,21 @@ function Login(){
         } else {
             setError("")
             console.log(name, email, password)
+
+            const user = {
+                name: name,
+                password: password,
+                email: email
+            }
+
+            dispatch({
+                type: 'ADD_USER',
+                user: user
+              })
+
+            navigate("/")
+
+
         }
     }
 
