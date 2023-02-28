@@ -1,7 +1,26 @@
 
 
 .home_main_container{
+    padding: 10px;
+}
 
+.home_button_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.encode_btn_label{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 50px 0px 0px 0px;
+}
+
+.encode_btn{
+    width: 100px;
+    display: none;
 }
 
 
